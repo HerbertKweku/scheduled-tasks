@@ -22,6 +22,6 @@ with open("quotes.txt") as data_file:
 
 connection = smtplib.SMTP("smtp.gmail.com",port=587)
 connection.starttls()
-connection.login(user=user_name,password=password)
+connection.login(user=MY_EMAIL,password=MY_PASSWORD)
 connection.sendmail(from_addr=user_name,to_addrs="herbertasiedu19@gmail.com",msg=f"Motivational Quote\n\n{random.choice(data)}")
 
